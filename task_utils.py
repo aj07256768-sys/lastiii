@@ -5,7 +5,7 @@ tasks = []
 def add_task(task_name):
     if validate_task_name(task_name):
         tasks.append({"name": task_name, "completed": False})
-        print("Task added successfully")
+        print("Task added successfully!")
     else:
         print("Invalid task name")
 
@@ -25,6 +25,6 @@ def view_pending_tasks():
 def mark_task_complete(index):
     if validate_task_index(index, tasks):
         tasks[index]["completed"] = True
-        print("Task marked as complete")
+        print("Task marked as complete!")
     else:
         print("Invalid task index")
